@@ -8,6 +8,60 @@ Your project uses 25+ modern technologies spanning frontend, backend, databases,
 
 ---
 
+## 📚 Git Version Control & Professional Workflows
+
+### **Git Fundamentals & Team Collaboration**
+
+#### **Concept 1: Repository Management & Basic Workflow**
+**Project Assignment**: Blog Platform with Git Best Practices
+- **Duration**: Integrated with Blog Platform (2-3 weeks)
+- **Description**: Learn Git fundamentals while building the blog platform. Practice repository setup, commit messages, branching, and remote workflows.
+- **Learning Objectives**:
+  - Initialize repositories and understand Git workflow
+  - Master staging, committing, and meaningful commit messages
+  - Connect to remote repositories (GitHub/GitLab)
+  - Push/pull changes and handle authentication
+
+#### **Concept 2: Feature Branch Workflow**
+**Project Assignment**: Task Management API with Branch Strategy
+- **Duration**: Integrated with Task API (1-2 weeks)
+- **Description**: Implement professional branching strategies while building the API. Practice feature branches, pull requests, and code reviews.
+- **Learning Objectives**:
+  - Create and manage feature branches
+  - Handle merge conflicts resolution
+  - Create meaningful pull requests
+  - Practice code review workflows
+
+#### **Concept 3: Advanced Git Workflows**
+**Project Assignment**: Team Collaboration Simulation
+- **Duration**: Integrated across multiple projects
+- **Description**: Practice GitFlow, release management, hotfix workflows, and open source contribution patterns.
+- **Learning Objectives**:
+  - Implement GitFlow branching model
+  - Manage releases with semantic versioning
+  - Handle emergency hotfixes
+  - Contribute to open source projects
+
+#### **Real-World Git Scenarios**:
+```bash
+# Professional commit messages
+git commit -m "feat: implement user authentication with JWT"
+git commit -m "fix: resolve login validation bug affecting mobile users"
+git commit -m "docs: update API documentation for v2.0 endpoints"
+
+# Feature branch workflow
+git checkout -b feature/user-dashboard
+git checkout -b fix/payment-processing-bug
+git checkout -b chore/update-dependencies
+
+# Release management
+git tag -a v1.0.0 -m "Initial production release"
+git checkout -b release/v1.1.0
+git flow hotfix start critical-security-fix
+```
+
+---
+
 ## 🔧 Core Framework & Runtime
 
 ### **Next.js 15.3.1 with App Router**
@@ -444,6 +498,170 @@ Your project uses 25+ modern technologies spanning frontend, backend, databases,
 
 ---
 
+## 🛠️ Professional Development Tools & Workflow
+
+### **VS Code & IDE Mastery**
+
+#### **Concept 1: IDE Setup & Extensions**
+**Project Assignment**: Configure Professional Development Environment
+- **Duration**: 1 week (setup alongside first project)
+- **Description**: Set up VS Code with essential extensions, keyboard shortcuts, and productivity features used in professional teams.
+- **Learning Objectives**:
+  - Master VS Code keyboard shortcuts and features
+  - Install and configure essential extensions
+  - Set up workspace settings and snippets
+  - Use integrated terminal and debugging tools
+
+#### **Essential Extensions**:
+```
+- ES7+ React/Redux/React-Native snippets
+- TypeScript Importer
+- Auto Rename Tag
+- Bracket Pair Colorizer
+- GitLens — Git supercharged
+- REST Client
+- Thunder Client (Postman alternative)
+- Error Lens
+- Prettier - Code formatter
+- ESLint
+- Tailwind CSS IntelliSense
+- Auto Import - ES6, TS, JSX, TSX
+- Path Intellisense
+- Live Server
+- Database Client JDBC
+```
+
+### **Package Managers & Dependency Management**
+
+#### **Concept 1: npm, yarn, and pnpm**
+**Project Assignment**: Package Manager Comparison Project
+- **Duration**: 1 week
+- **Description**: Learn differences between package managers, lockfiles, workspace management, and dependency resolution.
+- **Learning Objectives**:
+  - Understand npm, yarn, and pnpm differences
+  - Manage package.json and lockfiles
+  - Handle dependency conflicts and updates
+  - Set up monorepos with workspaces
+
+#### **Commands to Master**:
+```bash
+# npm
+npm install, npm ci, npm run, npm audit
+npm outdated, npm update, npm ls
+
+# yarn
+yarn install, yarn add, yarn run, yarn audit
+yarn upgrade, yarn why
+
+# pnpm (modern choice)
+pnpm install, pnpm add, pnpm run, pnpm audit
+pnpm update, pnpm why, pnpm dlx
+```
+
+### **API Development & Testing Tools**
+
+#### **Concept 1: Postman/Insomnia & API Testing**
+**Project Assignment**: API Testing Suite Setup
+- **Duration**: 1 week (integrated with API projects)
+- **Description**: Learn professional API testing tools, collections, environments, and automated testing workflows.
+- **Learning Objectives**:
+  - Create and organize API collections
+  - Set up environments and variables
+  - Write automated API tests
+  - Generate API documentation
+
+#### **Concept 2: Database Management Tools**
+**Project Assignment**: Database Visualization and Management
+- **Duration**: 1 week (with database projects)
+- **Description**: Use professional database tools like MongoDB Compass, pgAdmin, or Prisma Studio for data visualization and management.
+- **Learning Objectives**:
+  - Navigate database GUIs effectively
+  - Write and optimize queries
+  - Visualize data relationships
+  - Monitor database performance
+
+### **Design & Prototyping Tools**
+
+#### **Concept 1: Figma for Developers**
+**Project Assignment**: Design-to-Code Workflow
+- **Duration**: 1 week (with UI projects)
+- **Description**: Learn how developers use Figma to extract designs, assets, and collaborate with designers in professional teams.
+- **Learning Objectives**:
+  - Extract CSS properties from Figma designs
+  - Export assets and icons
+  - Understand design systems in Figma
+  - Collaborate with design teams
+
+#### **Tools to Learn**:
+```
+- Figma (primary design tool)
+- Chrome DevTools (debugging, performance)
+- React Developer Tools
+- Redux DevTools
+- Lighthouse (performance auditing)
+- Storybook (component documentation)
+```
+
+### **Command Line & Terminal Mastery**
+
+#### **Concept 1: Terminal Productivity**
+**Project Assignment**: Command Line Workflow Optimization
+- **Duration**: 1 week (integrated throughout)
+- **Description**: Master terminal navigation, shortcuts, and productivity tools that professional developers use daily.
+- **Learning Objectives**:
+  - Advanced terminal navigation and shortcuts
+  - Use of oh-my-zsh or fish shell
+  - Terminal multiplexing with tmux
+  - Command aliases and custom scripts
+
+#### **Essential Commands**:
+```bash
+# Navigation & File Operations
+ls, cd, pwd, mkdir, rm, cp, mv, find, grep
+
+# Process Management
+ps, top, htop, kill, jobs, nohup
+
+# Network & System
+curl, wget, ssh, scp, df, du, free
+
+# Development Specific
+npm/yarn/pnpm, git, docker, node, python
+code ., subl ., vim/nano
+
+# Productivity Tools
+alias, history, which, man, --help
+```
+
+### **Docker & Containerization**
+
+#### **Concept 1: Container Basics**
+**Project Assignment**: Containerize Your Applications
+- **Duration**: 2 weeks (with deployment projects)
+- **Description**: Learn Docker fundamentals, creating containers for development and production environments.
+- **Learning Objectives**:
+  - Write Dockerfiles for Node.js applications
+  - Use docker-compose for multi-service setups
+  - Understand container networking and volumes
+  - Deploy containerized applications
+
+#### **Docker Commands to Master**:
+```bash
+# Basic Operations
+docker build, docker run, docker ps, docker stop
+docker images, docker rmi, docker system prune
+
+# Docker Compose
+docker-compose up, docker-compose down
+docker-compose build, docker-compose logs
+
+# Development Workflow
+docker exec -it container_name bash
+docker-compose up --build
+```
+
+---
+
 ## 🛠️ Development Tools
 
 ### **ESLint & Prettier**
@@ -458,17 +676,30 @@ Your project uses 25+ modern technologies spanning frontend, backend, databases,
   - Implement automated quality checks
   - Create development workflows
 
-### **Husky 9.1.7**
+### **Husky 9.1.7 & Git Hooks**
 
 #### **Concept 1: Git Hooks & Automation**
 **Project Assignment**: Build a Development Workflow Automation System
 - **Duration**: 1 week
-- **Description**: Create comprehensive git hooks for pre-commit, pre-push, and post-merge automation with quality checks.
+- **Description**: Create comprehensive git hooks for pre-commit, pre-push, and post-merge automation with quality checks. Integrate with your existing projects.
 - **Learning Objectives**:
-  - Implement git hook automation
-  - Create quality gate systems
-  - Automate testing workflows
-  - Handle continuous integration
+  - Implement git hook automation (pre-commit, pre-push)
+  - Create quality gate systems with ESLint, Prettier, tests
+  - Automate testing workflows before commits
+  - Handle continuous integration triggers
+  - Prevent bad commits from reaching remote repository
+
+#### **Git Hook Examples**:
+```bash
+# Pre-commit hook: Run linting and formatting
+npm run lint && npm run format
+
+# Pre-push hook: Run full test suite
+npm run test && npm run build
+
+# Commit-msg hook: Validate commit message format
+npx commitlint --edit $1
+```
 
 ---
 
@@ -494,25 +725,34 @@ Your project uses 25+ modern technologies spanning frontend, backend, databases,
 ## 📚 Learning Path Recommendations
 
 ### **Beginner Path (6-8 months)**
-1. Start with Next.js and React fundamentals
-2. Learn TypeScript basics
-3. Master Tailwind CSS and UI components
-4. Implement basic authentication
-5. Learn form handling and validation
+1. **Development environment setup** - VS Code, extensions, terminal
+2. **Git fundamentals** - Repository setup, commits, branching
+3. **Next.js and React fundamentals** - App Router, components, hooks
+4. **TypeScript basics** - Type safety, interfaces, generics
+5. **Professional tools** - Package managers, API testing, Chrome DevTools
+6. **Tailwind CSS and UI components** - Styling, design systems
+7. **Authentication basics** - NextAuth, protected routes
+8. **Form handling and validation** - React Hook Form, Zod
 
 ### **Intermediate Path (8-12 months)**
-1. Advanced React patterns and hooks
-2. Complex state management with Redux
-3. Database design and Prisma ORM
-4. Real-time features with Socket.IO
-5. Testing strategies and implementation
+1. **Advanced Git workflows** - GitFlow, code reviews, collaboration
+2. **Database tools mastery** - MongoDB Compass, Prisma Studio, pgAdmin
+3. **Advanced React patterns** - Context, Suspense, concurrent features
+4. **Complex state management** - Redux Toolkit, RTK Query
+5. **Database design and Prisma ORM** - Schemas, relationships, queries
+6. **Real-time features** - Socket.IO, WebSockets
+7. **Design-to-code workflow** - Figma, Storybook, component libraries
+8. **Testing strategies** - Jest, Testing Library, Playwright
 
 ### **Advanced Path (12+ months)**
-1. Security and encryption implementation
-2. Performance optimization techniques
-3. Scalability and architecture patterns
-4. DevOps and deployment strategies
-5. Advanced TypeScript and system design
+1. **Enterprise Git workflows** - Release management, CI/CD integration
+2. **Containerization & DevOps** - Docker, Kubernetes, cloud deployment
+3. **Security and encryption** - AES-GCM, security headers, vulnerability testing
+4. **Performance optimization** - Monitoring, caching, bundle optimization
+5. **Scalability and architecture** - Microservices, load balancing, system design
+6. **DevOps and deployment** - CI/CD pipelines, containerization, cloud deployment
+7. **Advanced TypeScript** - Decorators, metadata, complex type systems
+8. **Team collaboration tools** - Jira, Slack integration, project management
 
 ---
 
