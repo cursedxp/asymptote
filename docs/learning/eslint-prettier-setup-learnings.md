@@ -247,6 +247,53 @@ git commit -m "fix: resolve multiple lockfiles warning and correct ESLint config
 
 ---
 
+## 🔍 Port Management Commands I Learned
+
+### Check What's Running on Specific Ports
+```bash
+# Check single port
+lsof -i :3000
+
+# Check multiple ports
+lsof -i :3000,3001,8080
+
+# Only show listening processes
+lsof -i :3000 | grep LISTEN
+
+# Get detailed process info
+lsof -i :3000 -P
+```
+
+### Kill Processes on Ports
+```bash
+# Kill all processes on port 3000
+lsof -ti:3000 | xargs kill
+
+# Force kill if needed
+lsof -ti:3000 | xargs kill -9
+
+# Kill specific process by PID
+kill [PID_NUMBER]
+
+# Verify port is free
+lsof -i :3000
+```
+
+### What I Learned About Port Management
+- **hbci** = port 3000 in system notation
+- **LISTEN** = server accepting connections
+- **ESTABLISHED** = active connection (like browser)
+- Multiple Chrome connections are normal for hot reload
+- Always verify port is free after killing processes
+
+### Why This Matters
+- Clean up development servers when switching projects
+- Troubleshoot "port already in use" errors
+- Manage multiple Node.js processes efficiently
+- Professional debugging workflow
+
+---
+
 ## 🔄 Next Steps to Apply This Learning
 
 1. **✅ Configuration Complete** - All files created and working
