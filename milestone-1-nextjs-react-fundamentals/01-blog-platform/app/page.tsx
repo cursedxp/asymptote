@@ -1,6 +1,7 @@
 //Header -> Navigation
 //Main -> Footer
 import PostItem from "./components/postItem/PostItem";
+import { mockBlogPosts } from "../data/mockData";
 
 export default function Home() {
   return (
@@ -15,7 +16,9 @@ export default function Home() {
         </nav>
       </header>
       <main>
-        <PostItem />
+        {mockBlogPosts.map((post) => (
+          <PostItem key={post.id} post={post} />
+        ))}
       </main>
     </div>
   );
