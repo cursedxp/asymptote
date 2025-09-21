@@ -2,6 +2,7 @@ import Image from "next/image";
 import PostDetails from "./PostDetails";
 import Controls from "./Controls";
 import AuthorAvatar from "./AuthorAvatar";
+import Link from "next/link";
 
 interface PostItemProps {
   post?: {
@@ -16,21 +17,24 @@ interface PostItemProps {
     comments?: number;
     url?: string;
     authorAvatar?: string;
+    slug?: string;
   };
 }
 export default function PostItem({ post }: PostItemProps) {
   return (
     <div className="shadow bg-neutral-900 m-auto rounded-md overflow-hidden flex flex-col mb-12">
-      <div className={`relative ${post?.imageUrl ? "h-[240px]" : "h-auto"} `}>
-        {post?.imageUrl && (
-          <Image
-            alt=""
-            src={post.imageUrl}
-            fill
-            className="object-cover"
-          ></Image>
-        )}
-      </div>
+      <Link href={`/blog/${post?.slug}`}>
+        <div className={`relative ${post?.imageUrl ? "h-[240px]" : "h-auto"} `}>
+          {post?.imageUrl && (
+            <Image
+              alt=""
+              src={post.imageUrl}
+              fill
+              className="object-cover"
+            ></Image>
+          )}
+        </div>
+      </Link>
       <div className="flex flex-col mx-4 my-4">
         <PostDetails
           title={post?.title}
@@ -38,6 +42,7 @@ export default function PostItem({ post }: PostItemProps) {
           publishDate={post?.publishDate}
           readTime={post?.readTime}
           tags={post?.tags}
+          slug={post?.slug}
         />
         <div className="flex gap-4 w-full overflow-hidden items-center justify-between">
           <Controls

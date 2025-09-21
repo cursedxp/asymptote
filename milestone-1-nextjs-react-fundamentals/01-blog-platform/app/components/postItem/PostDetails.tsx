@@ -1,6 +1,7 @@
 "use client";
 import Hastags from "./Hastags";
 import { useState } from "react";
+import Link from "next/link";
 
 interface PostDetailsProps {
   title?: string;
@@ -8,6 +9,7 @@ interface PostDetailsProps {
   publishDate?: string;
   readTime?: string;
   tags?: string[];
+  slug?: string;
 }
 
 export default function PostDetails({
@@ -16,15 +18,18 @@ export default function PostDetails({
   publishDate,
   readTime,
   tags,
+  slug,
 }: PostDetailsProps) {
   const [showTldr, setShowTldr] = useState(false);
 
   return (
     <div className="w-full flex flex-col">
       <div className="flex justify-between items-center gap-2">
-        <h2 className="text-3xl truncate">
-          {title || "Post Title goes here."}
-        </h2>
+        <Link href={`/blog/${slug}`}>
+          <h2 className="text-3xl truncate">
+            {title || "Post Title goes here."}
+          </h2>
+        </Link>
         <button
           className="rounded-sm hover:bg-neutral-800 transition cursor-pointer px-2 py-0.5  text-[10px] border border-white"
           onClick={() => setShowTldr(!showTldr)}
