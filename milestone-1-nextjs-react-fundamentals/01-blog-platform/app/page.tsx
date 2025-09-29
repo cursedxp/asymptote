@@ -6,7 +6,7 @@ import Header from "./components/header/Header";
 
 export default function Home() {
   return (
-    <div className="w-3xl m-auto h-screen pt-16">
+    <div>
       <Header />
       <main>
         {mockBlogPosts.map((post) => (
