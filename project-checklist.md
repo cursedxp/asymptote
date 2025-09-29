@@ -122,13 +122,13 @@ For each project, complete all sections before moving to the next project. This 
 
 #### Week 2: Dynamic Routing & Content
 
-- [ ] Create feature branch: "feature/dynamic-routing"
-- [ ] Implement dynamic blog post routes
-- [ ] Commit: "feat: add dynamic blog post routing with [slug]"
-- [ ] Create blog post listing page
-- [ ] Commit: "feat: implement blog post listing with mock data"
-- [ ] Add blog post detail pages
-- [ ] Commit: "feat: add individual blog post detail pages"
+- [x] Create feature branch: "feature/dynamic-routing"
+- [x] Implement dynamic blog post routes
+- [x] Commit: "feat: add dynamic blog post routing with [slug]"
+- [x] Create blog post listing page
+- [x] Commit: "feat: implement blog post listing with mock data"
+- [x] Add blog post detail pages
+- [x] Commit: "feat: add individual blog post detail pages"
 - [ ] Implement nested routing for categories
 - [ ] Add loading states with loading.tsx
 - [ ] Add error boundaries with error.tsx
